@@ -3,26 +3,20 @@
   padding: 0px;
 }
 
-body {
+/* body {
   
   background-image: url(./img/leaf.jpg);
-  /* Full height */
+  /* Full height 
   height: 100%;
-  
-
-  /* Center and scale the image nicely */
+  /* Center and scale the image nicely 
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-}
+} */
 
-.main-section {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column; /* This helps place things under one another */
+body{
+  background-color: #ececec;
 }
 
 h2 {
@@ -34,20 +28,52 @@ h2 {
   padding: 2rem;
 }
 
-.countdown {
+
+
+.main-section img{
+  width: 400px;
+}
+
+.main-section {
+  max-width: 100%;
+  /* min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; This helps place things under one another */
+}
+
+
+.content{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 500px);
+}
+
+
+.content .countdown{
   font-family: 'Poppins', sans-serif;
-  /* color: white; */
+  align-items: center;
   display: flex;
   justify-content: space-around;
+}
+
+.content img{
+  max-width: 500px;
+}
+
+.countdown{
+  position: relative;
   text-align: center;
-  padding-bottom: 550px;
+}
+
+.countdown-header h2{
+  position: absolute;
+  top: 230px;
+  left: 70px;
+  font-size: 30px;
 }
 
 .day, .hour, .minute, .second {
   font-size: 2rem;
 }
-
-/* .home {
-  padding-top: 20px;
-  height: 50vh;
-} */
